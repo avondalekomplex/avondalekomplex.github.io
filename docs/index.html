@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Avondale Komplex - one-stop destination for beauty and good food, drinks and health and fitness">
-    <meta name="keywords" content="Avondale, Avondale Komplex, AvondaleKomplex, Restaurant, Food, Drink, Bar, Beauty, Beauty Salon, Barber, Barber shop, Health and Fitness">
+    <meta name="description" content="Avondale Komplex - one-stop destination for beauty and good food, drinks, beauty salon, barber shop and property & estate sales and management">
+    <meta name="keywords" content="Avondale, Avondale Komplex, AvondaleKomplex, Restaurant, Food, Drink, Bar, Beauty, Beauty Salon, Barber, Barber shop, Property and Real Estate">
     <title>Avondale Komplex - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/united/bootstrap.min.css" integrity="sha512-bDf5pNGht0HBv1tNSyB06LQ4D+5IV4xpCmAFKORMIQi57c8mq96hg2Wa03//JNjHEjEai1qV+ZOUcwuy70j02A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="page-content">
@@ -15,14 +16,14 @@
              <!-- Nav -->
              <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">AvondaleKomplex</a>
+                  <a class="navbar-brand" href="/">AvondaleKomplex<sup>&reg;</sup></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
+                        <a class="nav-link active" href="/">Home
                           <span class="visually-hidden">(current)</span>
                         </a>
                       </li>
@@ -36,20 +37,24 @@
                         <a class="nav-link" href="#">About Us</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#">The Thistle Bar</a>
+                          <a class="dropdown-item" href="#">Restaurant</a>
+                          <a class="dropdown-item" href="#">Beauty Salon</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
+                          <a class="dropdown-item" href="#">Property and Real Estate</a>
                         </div>
                       </li>
                     </ul>
                     <form class="d-flex">
-                      <input class="form-control me-sm-2" type="search" placeholder="Search">
+                      <input class="form-control me-sm-2" type="search" placeholder="Enter text to search">
                       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                    <div id="user-profile" class="d-flex">
+                        <span style="padding: 0 1em 0 0;">Welcome, Guest</span> | 
+                        <a href="signin.html" class="nav-link" style="padding: 0 0 0 1em;">Sign in</a>
+                    </div>
                   </div>
                 </div>
               </nav>
@@ -58,16 +63,19 @@
             <!-- Main content -->
             <div class="container">
                 <div>
-                    <h2>Our Services</h2>
-                    <hr>
+                    <br>
+                    <h2 style="color: #C85928;">Welcome to AvondaleKomplex<sup>&reg;</sup></h2>
+                    <p>Your one-stop destination for delicious food, a high-quality bar with the widest selection of drinks, 
+                        an exquisite beauty salon and barber shop and affordable property and real estate sales, management and rentals.</p>
+                    <hr style="background-color: #C85928; height: 5px;">
                 </div>
-                <!-- Grid -->
-                
+
+                <!-- Grid -->                
                 <div class="row">
                     <div class="col-md-12">
                         <!-- bar -->
                         <div class="card mb-3">
-                            <h3 class="card-header">Bar</h3>
+                            <h3 class="card-header" style="color: whitesmoke; background-color: chocolate;">The Thistle Bar</h3>
                             <div class="card-body">
                                 <h5 class="card-title">Special title treatment</h5>
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
@@ -83,7 +91,7 @@
                     <div class="col-md-6">
                         <!-- restaurant -->
                         <div class="card mb-3">
-                            <h3 class="card-header">Restaurant</h3>
+                            <h3 class="card-header" style="color: whitesmoke; background-color: rgb(30, 210, 156);">Restaurant</h3>
                             <div class="card-body">
                                 <h5 class="card-title">Special title treatment</h5>
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
@@ -97,7 +105,7 @@
                     <div class="col-md-6">
                         <!-- salon -->
                         <div class="card mb-3">
-                            <h3 class="card-header">Beauty Salon</h3>
+                            <h3 class="card-header" style="color: whitesmoke; background-color: rgb(54, 30, 210);">Beauty Salon</h3>
                             <div class="card-body">
                                 <h5 class="card-title">Special title treatment</h5>
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
@@ -113,7 +121,7 @@
                     <div class="col-md-6">
                         <!-- barber shop -->
                         <div class="card mb-3">
-                            <h3 class="card-header">Barber Shop</h3>
+                            <h3 class="card-header" style="color: whitesmoke; background-color: rgb(177, 30, 210);">Barber Shop</h3>
                             <div class="card-body">
                                 <h5 class="card-title">Special title treatment</h5>
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
@@ -127,7 +135,7 @@
                     <div class="col-md-6">
                         <!-- property and real estate -->
                         <div class="card mb-3">
-                            <h3 class="card-header">Property and Real Estate</h3>
+                            <h3 class="card-header" style="color: whitesmoke; background-color: rgb(210, 30, 60);">Property and Real Estate</h3>
                             <div class="card-body">
                                 <h5 class="card-title">Special title treatment</h5>
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
