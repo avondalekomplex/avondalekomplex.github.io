@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Avondale Komplex - one-stop destination for beauty and good food, drinks, beauty salon, barber shop and property & estate sales and management">
     <meta name="keywords" content="Avondale, Avondale Komplex, AvondaleKomplex, Restaurant, Food, Drink, Bar, Beauty, Beauty Salon, Barber, Barber shop, Property and Real Estate">
-    <title>Avondale Komplex - Sign in</title>
+    <title>Avondale Komplex - Sign up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/united/bootstrap.min.css" integrity="sha512-bDf5pNGht0HBv1tNSyB06LQ4D+5IV4xpCmAFKORMIQi57c8mq96hg2Wa03//JNjHEjEai1qV+ZOUcwuy70j02A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/signin.mjs" defer></script>
+    <script type="module" src="js/signup.mjs" defer></script>
 </head>
 <body>
     <div id="page-content">
@@ -54,7 +54,7 @@
                     </form>
                     <div id="user-profile" class="d-flex">
                         <span style="padding: 0 1em 0 0;">Welcome, Guest</span> | 
-                        <a href="#" class="nav-link" style="padding: 0 0 0 1em;">Sign in</a>
+                        <a href="signin.html" class="nav-link" style="padding: 0 0 0 1em;">Sign in</a>
                     </div>
                   </div>
                 </div>
@@ -65,54 +65,46 @@
             <div class="container">
                 <div>
                     <br>
-                    <h2 style="color: #C85928;">Sign in</sup></h2>
+                    <h2 style="color: #C85928;">New Customer</sup></h2>
                     <p></p>
                     <hr style="background-color: #C85928; height: 5px;">
                 </div>
                 <!-- Grid -->                
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="card border-secondary mb-3" style="max-width: 23rem;">
-                            <div class="card-header">Use your Google Account</div>
+                    <div class="col-md-12">
+                        <div class="card border-secondary mb-4">
+                            <div class="card-header">Sign Up</div>
                             <div class="card-body">
-                                <h4 class="card-title">Sign in with Google</h4>
+                                <h4 class="card-title">Sign up for a new AvondaleKomplex Account</h4>
                                 <p class="card-text">
-                                    Simply click on the Google logo below and sign in using your Google Account.
-                                </p>
-                                <a href="#"><img alt="Sign in with Google" src="images/login-with-google.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card border-secondary mb-4" style="max-width: 60rem;">
-                            <div class="card-header">Use your AvondaleKomplex Account</div>
-                            <div class="card-body">
-                                <h4 class="card-title">Sign in with your AvondaleKomplex Account</h4>
-                                <p class="card-text">
-                                    Enter your AvondaleKomplex Username and Password below, 
-                                    and click the "Sign In" button, to sign in.
+                                    Enter your Name, Email, choose a Username and Password, 
+                                    and click the "Sign Up" button below, to sign up for a new account.
                                 </p>
                                 <div>
-                                    <form id="formLogin" name="formLogin" action="#" method="post">
-                                        <div id="divInvalidUserMsg" style="display: none;" class="alert alert-dismissible alert-danger">
-                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                            Invalid username and/or password.
+                                    <form id="formSignUp" name="formSignUp" action="#" method="post">
+                                        <div class="form-group my-4">
+                                            <label for="customername">Customer Name</label>
+                                            <input id="customername" name="customername" type="text" class="form-control" autofocus="autofocus" required/>
                                         </div>
-                                        <div style="display: none;" class="alert alert-dismissible alert-primary">
-                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                            You have been signed out.
+                                        <div class="form-group my-4">
+                                            <label for="email">Email</label>
+                                            <input id="email" name="email" type="email" class="form-control" required/>
                                         </div>
                                         <div class="form-group my-4">
                                             <label for="username">Username</label>
-                                            <input id="username" name="username" type="text" class="form-control" autofocus="autofocus" required/>
+                                            <input id="username" name="username" type="text" class="form-control" maxlength="16" minlength="4" required/>
                                         </div>
                                         <div class="form-group my-4">
                                             <label for="password">Password</label>
                                             <input id="password" name="password" type="password" class="form-control" required/>
                                         </div>
+                                        <div class="form-group my-4">
+                                            <label for="confpassword">Confirm Password</label>
+                                            <input id="confpassword" name="confpassword" type="password" class="form-control" required/>
+                                        </div>
                                         <div style="float:right;">
                                             <a href="/" class="btn btn-outline-warning">Cancel</a>&nbsp;&nbsp;&nbsp;
-                                            <button id="btnSubmit" type="submit" class="btn btn-outline-success">Sign In</button>
+                                            <button id="btnSubmit" type="submit" class="btn btn-outline-success">Sign Up</button>
                                         </div>
                                     </form>
                                 </div>
@@ -124,8 +116,8 @@
                     <div class="col-md-12"> 
                         <blockquote class="blockquote">
                             <p class="mb-0">
-                                Are you a new Customer? And you do not yet have an AvondaleKomplex account?
-                                Then, <a href="signup.html">Sign up</a>.
+                                Are you a registered Customer? And you do already have an AvondaleKomplex account?
+                                Then, <a href="signin.html">Sign in</a>.
                             </p>
                         </blockquote>
                     </div>

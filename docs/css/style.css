@@ -1,6 +1,33 @@
 /* style.css */
-
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+div#page-content {
+    /* border: 1em solid lime; */
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 div#user-profile {
     margin-left: 3em;
     color: whitesmoke;
+}
+footer {
+    min-height: 8vh;
+    background-color: rgb(33, 33, 33);
+    color: rgb(246, 152, 69);
+    display: flex;
+    align-items: center;
+}
+footer div.left-footer {
+    margin-left: 2em;
+    flex: 1;
+}
+footer div.right-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    flex: 1;
 }
